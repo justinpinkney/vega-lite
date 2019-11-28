@@ -90,7 +90,7 @@ const STACK_GROUP_PREFIX = 'stack_group_';
 /**
  * We need to put stacked bars into groups in order to enable cornerRadius for stacks.
  * If stack is used and the model doesn't have size encoding, we put the mark into groups,
- * and apply cornerRadius properties at the group level.
+ * and apply cornerRadius properties at the group.
  */
 function getStackGroups(model: UnitModel) {
   // Activate groups if stack is used and the model doesn't have size encoding
