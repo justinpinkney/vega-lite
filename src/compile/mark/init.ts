@@ -57,7 +57,6 @@ export function normalizeMarkDef(
     markDef.cursor = cursor(markDef, encoding, config);
   }
 
-  // set corner radius
   if (markDef.type == 'bar') {
     for (const prop of VG_CORNERRADIUS_CHANNELS) {
       markDef[prop] = markDef[prop] ?? getMarkConfig(prop, markDef, config);
